@@ -1,6 +1,12 @@
 body {
   background: #66bfbf;
 }
-a footer {
+a {
+  color: #f76b8a;
+}
+footer {
   text-align: center;
+}
+footer a:hover {
+  font-size: 17px;
 }

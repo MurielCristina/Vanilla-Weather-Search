@@ -1,5 +1,17 @@
 body {
   background: #66bfbf;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #272343;
+}
+
+h1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 a {
   color: #f76b8a;
@@ -9,4 +21,13 @@ footer {
 }
 footer a:hover {
   font-size: 17px;
+}
+#weatherApp {
+  background-color: #fcfefe;
+  opacity: 90%;
+  margin: 60px auto;
+  width: 600px;
+  padding: 20px;
+  box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
+  border-radius: 16px;
 }

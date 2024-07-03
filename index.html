@@ -5,51 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather Search / Project Setup</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ligth color palete in: https://palettes.shecodes.io/palettes/1293#palette -->
     <!-- dark color palete in: https://palettes.shecodes.io/palettes/1551#palette -->
-    <header>
-      <h1>Weather Search</h1>
-      <form>
-        <input
-          type="text"
-          placeholder="Type a city"
-          autocomplete="on"
-          autofocus="on"
-        />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h2>Panama city</h2>
-        <p>
-          Wednesday 19:31, overcast clouds
-          <br />
-          Humidity: <strong>54%</strong>, Wind: <strong>6.17km/h</strong>
-        </p>
-      </div>
-      <div>
-        <p>🌦️ 33ºC</p>
-      </div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/MurielCristina" target="_blank">🪷 Muri 🪷</a>,
-      is open sourced on
-      <a
-        href="https://github.com/MurielCristina/Vanilla-Weather-Search"
-        target="_blank"
-        >GitHub</a
-      >
-      and website hosted on
-      <a
-        href="https://vanilla-weather-seach-codedbymuri.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div id="weatherApp">
+      <header>
+        <h1>Weather Search</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Type a city"
+            autocomplete="on"
+            autofocus="on"
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h2>Panama city, Panama</h2>
+          <p>
+            Wednesday 19:31, overcast clouds
+            <br />
+            Humidity: <strong>54%</strong>, Wind: <strong>6.17km/h</strong>
+          </p>
+        </div>
+        <div>
+          <p>🌦️ 33ºC</p>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/MurielCristina" target="_blank">🪷 Muri 🪷</a
+        >, is open sourced on
+        <a
+          href="https://github.com/MurielCristina/Vanilla-Weather-Search"
+          target="_blank"
+          >GitHub</a
+        >
+        and website hosted on
+        <a
+          href="https://vanilla-weather-seach-codedbymuri.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/java.js"></script>
   </body>
 </html>

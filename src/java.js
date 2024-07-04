@@ -1,3 +1,5 @@
+//Current Time
+
 let now = new Date();
 let days = [
   "Sunday",
@@ -15,3 +17,15 @@ let currentDateAndHour = `${day} ${hour}:${minute}`;
 
 let dateAndHour = document.querySelector(".date-and-hour");
 dateAndHour.innerHTML = currentDateAndHour;
+
+// Search Engine
+function search(event) {
+  event.preventDefault();
+  let searchCity = document.querySelector("#form-text");
+  console.log(searchCity.value);
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = `${searchCity.value}, Country`;
+}
+
+let searchInput = document.querySelector(".form");
+searchInput.addEventListener("submit", search);

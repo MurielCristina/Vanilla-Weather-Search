@@ -14,6 +14,7 @@ function search(event) {
   let filterEmoji = document.querySelector(
     "#data-showcase-temperature-container-emoji"
   );
+  let filterNow = document.querySelector(".date-and-hour");
 
   //API
   function filter(response) {
@@ -24,7 +25,20 @@ function search(event) {
     let dataHumidity = response.data.temperature.humidity;
     let dataWind = response.data.wind.speed;
     let dataEmoji = response.data.condition.icon_url;
-    console.log(dataEmoji);
+    let now = new Date(response.data.time * 1000);
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let day = days[now.getDay()];
+    let hour = now.getHours();
+    let minute = now.getMinutes().toString().padStart(2, 0);
+    let currentDateAndHour = `${day} ${hour}:${minute}`;
 
     h2.innerHTML = `${dataCity}, ${dataCountry}`;
     filterTemperature.innerHTML = dataTemperature;
@@ -32,6 +46,7 @@ function search(event) {
     filterHumidity.innerHTML = `${dataHumidity}%`;
     filterWind.innerHTML = `${dataWind}km/h`;
     filterEmoji.innerHTML = `<img src="${response.data.condition.icon_url}"data-showcase-temperature-container-emoji" />`;
+    filterNow.innerHTML = currentDateAndHour;
   }
 
   let apikEY = "73050fa355794447f81ab5349190dotd";
@@ -41,23 +56,3 @@ function search(event) {
 
 let searchInput = document.querySelector(".form");
 searchInput.addEventListener("submit", search);
-
-//Current Time
-
-let now = new Date();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let hour = now.getHours();
-let minute = now.getMinutes().toString().padStart(2, 0);
-let currentDateAndHour = `${day} ${hour}:${minute}`;
-
-let dateAndHour = document.querySelector(".date-and-hour");
-dateAndHour.innerHTML = currentDateAndHour;

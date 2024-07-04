@@ -49,8 +49,12 @@ h2 {
 }
 
 a {
-  color: #f76b8a;
+  color: #66bfbf;
 }
 footer {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
 }

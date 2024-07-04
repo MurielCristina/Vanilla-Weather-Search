@@ -10,7 +10,7 @@ body {
   background-color: #fcfefe;
   opacity: 90%;
   margin: 60px auto;
-  width: 80%;
+  width: 550px;
   padding: 20px;
   box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
   border-radius: 16px;
@@ -31,6 +31,7 @@ h2 {
   border-radius: 8px;
   font-size: 18px;
   padding-left: 20px;
+  margin-left: 60px;
 }
 .form-search {
   width: 100px;

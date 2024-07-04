@@ -6,22 +6,6 @@ body {
   font-style: normal;
   color: #272343;
 }
-
-h1 {
-  font-family: "Bona Nova SC", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-a {
-  color: #f76b8a;
-}
-footer {
-  text-align: center;
-}
-footer a:hover {
-  font-size: 17px;
-}
 #weatherApp {
   background-color: #fcfefe;
   opacity: 90%;
@@ -30,4 +14,42 @@ footer a:hover {
   padding: 20px;
   box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
   border-radius: 16px;
+}
+h1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+}
+.form-text {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #bae8e8;
+  border-radius: 8px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.form-search {
+  width: 100px;
+  height: 30px;
+  color: #272343;
+  background: #e3f6f5;
+  border: 1px solid #bae8e8;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.form-search:hover {
+  cursor: pointer;
+  background: #bae8e8;
+  transition: all ease-in-out 150ms;
+}
+
+a {
+  color: #f76b8a;
+}
+footer {
+  text-align: center;
 }

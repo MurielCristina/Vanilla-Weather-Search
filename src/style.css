@@ -21,9 +21,6 @@ h1 {
   font-style: normal;
   text-align: center;
 }
-h2 {
-  font-size: 30px;
-}
 .form-text {
   width: 300px;
   height: 25px;
@@ -48,6 +45,25 @@ h2 {
   transition: all ease-in-out 150ms;
 }
 
+.data-showcase {
+  display: flex;
+  justify-content: space-between;
+}
+h2 {
+  font-size: 30px;
+}
+.data-showcase-temperature {
+  color: #272343;
+  font-size: 30px;
+  margin-right: 50px;
+  font-weight: 700;
+}
+.climate-detail {
+  color: rgba(0, 0, 0, 0.7);
+}
+.climate-detail strong {
+  color: #f76b8a;
+}
 a {
   color: #66bfbf;
 }

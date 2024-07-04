@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <!-- ligth color palete in: https://palettes.shecodes.io/palettes/1293#palette -->
@@ -38,9 +39,9 @@
           <div>
             <h2>Panama city, Panama</h2>
             <p class="climate-detail">
-              <span class="date-and-hour">Wednesday 19:31</span>, overcast clouds
+              <span class="date-and-hour">Wednesday 19:31</span>, <span id="conditions">overcast clouds</span>
               <br />
-              Humidity: <strong>54%</strong>, Wind: <strong>6.17km/h</strong>
+              Humidity: <strong id="humidity">54%</strong>, Wind: <strong id="wind">6.17km/h</strong>
             </p>
           </div>
           <div class="data-showcase-temperature-container">
